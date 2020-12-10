@@ -1,7 +1,7 @@
 const url_scheme = require('../modules/url_table')
 
 exports.set_url = async function(_url,_data,next){
-    console.log(_url,_data)
+    //console.log(_url,_data)
     let newContacts = new url_scheme({
         url : _url,
         scheme : _data.scheme,
