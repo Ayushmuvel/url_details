@@ -6,7 +6,7 @@ const path = require("path");
 const connectDB = require('./config/mongo_con') //connect to mongoes DB
 connectDB()
 
-const {conn_port} = require('./config/sys_vari');
+//const {conn_port} = require('./config/sys_vari');
 
 //adding express 
 var app = express();
@@ -34,7 +34,7 @@ app.use('/url',get_url)
 app.get('/',(req,res)=>{
     res.send('it work')
   })
-
+var conn_port = process.env.PORT
 // defining port to listen
 app.listen(conn_port||3000,()=>{
     console.log("server started at port "+ conn_port||3000);
