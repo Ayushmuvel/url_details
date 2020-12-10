@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html data-wf-domain="comp-of-url.webflow.io" data-wf-page="5fd0c2e4c21eb62fb302ca13" data-wf-site="5fd0c053f042b00f48a56bd3" data-wf-status="1">
+    <head>
+        <meta charset="utf-8"/>
+        <title>User Details</title>
+        <link href="../css/second_page.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="body-2">
+        <div class="div-block">
+            <div class="div-block-2">
+                <table>
+                    <tr>
+                        <th>email</th>
+                        <th>Password</th>
+                    </tr>
+                    <% details.forEach(function(detail){%>
+                    <tr>
+                        <td><%= detail.email %></td>
+                        <td><%= detail.pass %></td>
+                    </tr>
+                    <%})%>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
