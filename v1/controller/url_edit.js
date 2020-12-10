@@ -37,7 +37,7 @@ exports.all_url = (req,res,next)=>{
         if (err){
             res.send(err)
         }else{
-            console.log(data)
+            //console.log(data)
             res.render('v1/public/html/get_all_url.html',{details:data})
         }
     })
